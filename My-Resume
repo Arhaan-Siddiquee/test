@@ -1,0 +1,218 @@
+%-------------------------
+% Resume in Latex
+% Author: Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure ATS compatibility
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Arhaan Siddiquee} \\ \vspace{1pt}
+    7070000629 $|$ \href{mailto:siddiqueearhaan@gmail.com}{siddiqueearhaan@gmail.com} $|$ 
+    \href{https://www.linkedin.com/in/arhaansiddiquee/}{linkedin/arhaansiddiquee/} $|$
+    \href{https://github.com/Arhaan-Siddiquee}{github/Arhaan-Siddiquee}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\resumeItemListStart
+  \resumeItem{Dynamic Frontend Developer with over 2 years of experience in designing, developing, and implementing user-friendly web applications using the MERN stack. Proven success in enhancing application performance, improving user experience, and increasing engagement through innovative UI/UX design. Adept at collaborating with cross-functional teams and mentoring junior developers. Seeking to leverage expertise in a challenging environment focused on technological advancement and user-centric design.}
+\resumeItemListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SRM University}{Chennai, TN}
+      {Bachelor of Technology in Computer Science Engineering}{Aug. 2023 -- May 2027}
+    \resumeSubheading
+      {D.A.V Public School}{}
+      {Matriculation and Intermediate}{Aug. 2019 -- May 2023}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {OpenSource Contributor}{Sep. 2024 -- Present}
+      {Hactoberfest}{}
+      \resumeItemListStart
+        \resumeItem{Contributed to an open-source project during Hacktoberfest, focusing on bug fixes and UI/UX improvements to enhance performance, accessibility, and overall user experience, benefiting both developers and end users.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Frontend Developer}{Sep. 2024 -- Present}
+      {Niramaya Startup}{Hybrid}
+      \resumeItemListStart
+        \resumeItem{Led the development of a SaaS website, enhancing user engagement by 30\% through optimized UI/UX and effective navigation.}
+        \resumeItem{Integrated RESTful APIs in collaboration with backend teams, significantly improving application functionality and performance.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Technical Member}{Sep. 2024 -- Present}
+      {Codenex Club}{SRM University, Chennai}
+      \resumeItemListStart
+        \resumeItem{Played a crucial role in developing full-stack applications, providing mentorship to over 10 junior developers on best coding practices.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Creative Associate}{Oct. 2023 -- Present}
+      {Founder's Club}{SRM University, Chennai}
+      \resumeItemListStart
+        \resumeItem{Directed UI/UX design for multiple projects, achieving a 25\% increase in user interaction and satisfaction.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Creative Designer}{Oct. 2023 -- Mar. 2024}
+      {dBug Labs}{SRM University, Chennai}
+      \resumeItemListStart
+        \resumeItem{Designed intuitive UI/UX for 5+ web and mobile applications, leading to a 20\% increase in user satisfaction based on user feedback.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------MAJOR PROJECTS-----------
+\section{Major Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Codenex Recruitment Website} $|$ \emph{Technologies: MongoDB, Express.js, React.js, Node.js}}{Personal Project}
+      \resumeItemListStart
+        \resumeItem{Developed and managed a recruitment platform that facilitated job connections for 500+ students, resulting in 150+ successful placements.}
+      \resumeItemListEnd
+      
+    \resumeProjectHeading
+      {\textbf{Save-A-Serve} $|$ \emph{Technologies: HTML, CSS, Java, MySQL}}{Personal Project}
+      \resumeItemListStart
+        \resumeItem{Developed a food donation platform that connected 200+ individuals and organizations, facilitating efficient food redistribution.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Carbon Footprint Tracker} $|$ \emph{Technologies: Python, HTML, CSS}}{Personal Project}
+      \resumeItemListStart
+        \resumeItem{Engineered a tool that allows companies to track their carbon footprint, resulting in a 15\% reduction in overall carbon emissions.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{10xCoders} $|$ \emph{Technologies: React.js, Node.js, CSS, JavaScript}}{Group Project}
+      \resumeItemListStart
+        \resumeItem{Developed a tech resources platform that serves over 100 active users, enhancing their learning journeys with accessible resources.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{GDSC Website UI/UX Mockup} }{}{}
+      \resumeItemListStart
+        \resumeItem{Oversaw UI/UX design efforts for the GDSC website, leading to significant enhancements in user experience metrics.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{RFID Scanner Application} $|$ \emph{Technologies: Java, Android}}{Group Project}
+      \resumeItemListStart
+        \resumeItem{Developed an RFID scanner application that streamlined inventory management, reducing tracking time by 40\%.}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeItem{Programming Languages: C, Java, Python, JavaScript, HTML, CSS}
+    \resumeItem{Frameworks: React.js, Node.js, Express.js, Tailwind CSS}
+    \resumeItem{Databases: MongoDB, MySQL}
+    \resumeItem{Tools: Git, Docker, Figma, Visual Studio Code}
+    \resumeItem{Soft Skills: Team Leadership, Communication, Problem Solving, Mentoring}
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeItem{Ranked 10th Position out of 155 Teams in Hackathon - RedBull Basement}
+    \resumeItem{Introduction to Cybersecurity - Cisco}
+    \resumeItem{Introduction to PHP - Simplilearn}
+    \resumeItem{C Programming For Beginners - Udemy}
+    \resumeItem{C++ Programming - Udemy}
+  \resumeSubHeadingListEnd
+
+%-----------INTERESTS-----------
+\section{Interests}
+  \resumeSubHeadingListStart
+    \resumeItem{UI/UX Design, Cybersecurity, Entrepreneurship, Web Development}
+  \resumeSubHeadingListEnd
+
+\end{document}
